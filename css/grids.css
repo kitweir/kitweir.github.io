@@ -1,0 +1,54 @@
+/*html, body{
+  width:100vw;
+  height:100vh;
+}*/
+
+.grid-row{
+  display:flex;
+  margin:0;
+  width:100%;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+header .grid-row{
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.one-of-1, .one-of-2, .one-of-3, .two-of-3, .three-of-5, .two-of-5{
+  width:100%;
+  margin:0;
+}
+
+.content-container{
+  min-height:100vh;
+  width:100vw;
+  padding: 6vw 5vw 6vw 9vw;
+  display:flex;
+  align-items: center;
+}
+
+
+@media(min-width:31em){ /* 499px */
+
+}
+
+@media(min-width:45.813em){ /* 733px — sidebar appears */
+
+}
+
+@media(min-width:55em){
+  .one-of-2{
+    width:48%;
+  }
+
+  .one-of-3{
+    width:38%;
+  }
+
+  .two-of-3{
+    width:62%;
+  }
+}

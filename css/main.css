@@ -1,0 +1,417 @@
+/* set everything to border-box sizing */
+* {
+  box-sizing: border-box;
+  &::before, &::after {
+    box-sizing: border-box;
+  }
+}
+
+*,*:focus,*:hover{
+    outline:none;
+}
+
+/* CUSTOM PROPERTIES */
+:root {
+  --primary-colour: #FFECE5;
+  --black: #000000;
+}
+
+/* BODY STYLING */
+body {
+	background: #FDFDFD;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* HEADER + FOOTER STYLING */
+header {
+  width:100%;
+  box-sizing: border-box;
+	padding:0.5rem 0.5rem 0.5rem 1rem;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index: 99;
+  font-family: 'Work Sans', sans-serif;
+}
+
+a.title{
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 700;
+	font-size:1.3rem;
+	padding-left:0.7rem;
+	padding-top:0.7rem;
+}
+
+footer{
+  position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0rem 1.4rem 0rem 0rem;
+  width:100%;
+  text-align:right;
+  z-index: 95;
+}
+
+footer p, .fullscreen-menu p.corner-text{
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 700;
+	font-size:1.3rem;
+}
+
+/* LINK STYLING */
+a{
+  font-weight: bold;
+  text-decoration: underline;
+  color: var(--black);
+}
+
+a:hover{
+  color: var(--primary-colour);
+}
+
+/* HEADERS & TEXT STYLING */
+h1{
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 3rem;
+}
+
+p{
+  font-size: 1.15rem;
+  font-weight: 400;
+	line-height: 1.65rem;
+}
+
+.blurb p, #youtube h1{
+  max-width: 40vw;
+  text-align: justify;
+}
+
+/* LIST STYLING */
+ol {
+  margin-left:20%;
+  counter-reset: item;
+  font-size: 1.1rem;
+  font-weight: 300;
+	letter-spacing: 0.03rem;
+	max-width:27.5rem;
+}
+
+ol > li {
+  margin: 0;
+  margin-bottom:0.75rem;
+  text-indent: -2.75em;
+	line-height: 1.7rem;
+  list-style-type: none;
+  counter-increment: item;
+}
+
+ol > li:before {
+  font-size: 1rem;
+  padding-right: 0.5em;
+  font-weight: 400;
+  text-align: right;
+  content: "0" counter(item) " —";
+}
+
+ol.insights{
+  margin-left:28%;
+  padding-top:1rem;
+	max-width:25.5rem;
+}
+
+ol.insights > li{
+  text-indent: -7em;
+  margin-bottom:1.25rem;
+}
+
+ol.insights > li:before {
+  padding-right: 0.5em;
+  font-weight: 400;
+  text-align: right;
+  content: "INSIGHT 0" counter(item) " —";
+}
+
+ul{
+	list-style-type: none;
+	padding:0;
+}
+
+/* IMAGE (INCL CAPTION) + VIDEO STYLING */
+img{
+  width:100%;
+  height:auto;
+}
+
+img.interstitial{
+  margin: 6vh 0vw 0vw 0vh;
+}
+
+figure{
+	width:100%;
+	margin:0;
+}
+
+figcaption{
+	text-align: center;
+  font-size: 0.85rem;
+	letter-spacing: 0.03rem;
+  font-weight: 300;
+	font-style: italic;
+	color:rgba(0,0,0,0.4);
+	margin-bottom:2rem;
+	margin-top:0.5rem;
+}
+
+video{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+video.mobile{
+  height: 82vh;
+  width:auto;
+}
+
+/* MISC ELEMENT STYLING */
+
+/* NAVIGATION (FULL SCREEN MENU) */
+.fullscreen-menu{
+  background: var(--primary-colour);
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  left: 0rem;
+  top: 0rem;
+  z-index: 98;
+
+  padding: 6vw 8vw 6vw 8vw;
+
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  visibility:visible;
+  opacity:1;
+  transition: opacity .3s;
+}
+
+.nav-button{
+  text-transform: capitalize;
+  text-decoration: underline;
+
+  padding:0;
+  margin:0;
+
+	display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+
+	font-size: 4.5vw;
+  font-weight: 500;
+  line-height: 6.5vw;
+}
+
+.fullscreen-menu a:hover{
+  color: white;
+}
+
+.fullscreen-menu p{
+  font-size: 1.6vw;
+  line-height: 2.3vw;
+  margin:0;
+  display:block;
+}
+
+.fullscreen-menu p:first-of-type{
+  margin-top:3vw;
+}
+
+.fullscreen-menu p a{
+  font-weight: normal;
+}
+
+p.corner-text{
+  position:fixed;
+  bottom:1.8vw;
+  right:4.4vw;
+  text-align: right;
+}
+
+button.hamburger{
+  z-index: 99;
+}
+
+.hide{
+  visibility:hidden;
+  opacity: 0;
+  transition: all .3s;
+}
+
+/* 'BLACKOUT POEM' INTRO TEXT CODE */
+#intro{
+  padding-bottom:4vw;
+}
+
+#intro p{
+  font-family: "Work Sans", sans-serif;
+  width: 51vw;
+  font-size: 1.7vw;
+	line-height: 2.5vw;
+	text-align: justify;
+}
+
+span.blackout {
+  position: relative;
+	font-weight: 600;
+}
+
+span.blackout::after {
+  content: '';
+  position: absolute;
+  bottom: -0.1rem;
+  right: -0.08rem;
+  height: 2vw;
+  width:100.5%;
+  transition: width 1s ease-in-out;
+
+  /* Move the bar in front of the text */
+  z-index: 5;
+
+  /* The SVG is added as an SVG background image */
+  background-image: url('../img/hidebar.svg');
+  background-repeat: no-repeat;
+
+  /* This allows the SVG to flex in size to fit any length of word. If the word is short, the SVG will be stretched vertically, if it is long, the SVG will be stretched horizontally. The jagged nature of this particular SVG works with this transforming. */
+  background-size: cover;
+}
+
+span.blackout.reveal::after{
+  width:0%;
+  color: var(--black);
+}
+
+/* ERASER REVEAL ANIMATION */
+#intro svg{
+	height: auto;
+	width:auto;
+	width: 3.5vw;
+	margin-right: 0.4vw;
+	margin-top:-0.3vw;
+	vertical-align: middle;
+}
+
+#intro a {
+  position: relative;
+  color: var(--black);
+  text-decoration: none;
+}
+
+#intro a:hover {
+  color: var(--black);
+}
+
+#intro a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -0.1rem;
+  left: 0;
+  background-color: var(--black);
+  visibility: hidden;
+	transform-origin: left;
+  transform: scaleX(0);
+  transition: all 0.4s ease-in-out 0s;
+}
+
+#intro p.text-toggle{
+	display:block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.7vw;
+  cursor:pointer;
+	letter-spacing: 0.03rem;
+  color: rgba(0,0,0,0.3);
+}
+
+.text-toggle:hover a::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+/* set default state for paths */
+#top-line{
+	transform-origin: 1.7rem;
+	transform: scaleX(0);
+	animation: slideOut 0.3s ease-in-out forwards reverse;
+}
+
+#bottom-line{
+	transform-origin: center;
+	transform: scaleX(0);
+	animation: slideOut 0.3s ease-in-out forwards reverse;
+}
+
+/* specify animation name + keyframes */
+@keyframes slideIn {
+  0% {
+		transform: scaleX(0);
+	}
+  100% {
+		transform: scaleX(1);
+	}
+}
+
+@keyframes slideOut {
+  0% {
+		transform: scaleX(0);
+	}
+  100% {
+		transform: scaleX(1);
+	}
+}
+
+/* set trigger event + animation */
+.text-toggle:hover #top-line{
+	animation: slideIn 0.3s 0.3s ease-in-out forwards;
+}
+
+.text-toggle:hover #bottom-line{
+	animation: slideIn 0.5s ease-in-out forwards;
+}
+
+#eraserFill {
+  fill:  var(--primary-colour);
+  clip-path: circle(0% at 45% 100%);
+  transition: clip-path 0.8s;
+}
+
+.text-toggle:hover #eraserFill{
+  clip-path: circle(100%);
+}
+
+
+/* MEDIA QUERIES */
+@media(min-width:32em){
+
+}
+
+@media(min-width:45.813em){ /* 733px — when sidebar appears (no longer mobile view) */
+	header{
+		padding:1.5rem 3rem 0rem 3rem;
+	}
+
+	footer.fixed{
+	  position:fixed;
+	  padding:0.5rem 3.9rem;
+		bottom:0rem;
+		width:100%;
+	}
+}
