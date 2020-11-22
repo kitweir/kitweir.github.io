@@ -112,6 +112,7 @@ header .grid-row{
   }
 
   .section-header{
-    width:20%;
+    width:13rem;
+    margin-right:5rem;
   }
 }
