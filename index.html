@@ -36,15 +36,16 @@
           <span class="hamburger-inner"></span>
         </span>
       </button>
+
     </div>
 
     <!-- fullscreen menu -->
     <div class="fullscreen-menu hide" aria-hidden="true">
 
-      <ul>
-        <li><a href="" class="nav-button">Work</a></li>
+      <ul class="menu">
+        <li><a href="index.html" class="nav-button">Home</a></li>
         <li><a href="" class="nav-button">About</a></li>
-        <li><a href="" class="nav-button">YouTube</a></li>
+        <li><a href="youtube.html" class="nav-button">YouTube</a></li>
         <li><a href="" class="nav-button">Microsoft</a></li>
         <li><a href="" class="nav-button">Royal Caribbean</a></li>
       </ul>
@@ -62,8 +63,8 @@
 
   <!-- intro content -->
   <div class="content-container">
-    <div id="intro">
-    <p>Hi, I’m Kit. I’m a <span class="blackout">hobbyist chef, tattoo artist in training, and a</span> UX designer<span class="blackout">. Travelling gives me anxiety, so I tend to stay at </span><span class="blackout">home</span> on the unceded Musqueam, Tsleil-Waututh, and Squamish territories (Vancouver, BC). My practice is characterized by <span class="blackout">what I feel the world needs more of:</span> sensitivity, care, and the consideration of often overlooked perspectives. I believe in <span class="blackout">questioning if our</span> human-centered design <span class="blackout">is centering the right humans or not</span>.</p>
+    <div id="intro" class="js-section" data-text="hello@kitweir.com">
+    <p>Hi, I’m Kit. I’m a <span class="blackout">plant parent, tattoo artist in training, and a</span> UX designer<span class="blackout">. Travelling gives me anxiety, so I tend to stay at </span><span class="blackout">home</span> on the unceded Musqueam, Tsleil-Waututh, and Squamish territories (Vancouver, BC). My practice is characterized by <span class="blackout">what I feel the world needs more of:</span> sensitivity, care, and the consideration of often overlooked perspectives. I believe in <span class="blackout">questioning if our</span> human-centered design <span class="blackout">is centering the right humans or not</span>.</p>
 
     <p class="text-toggle">
       <svg width="109" height="86" viewBox="0 0 109 86" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -84,47 +85,83 @@
 
   <!-- p1 content -->
   <div class="content-container">
-    <div id="youtube" class="grid-row">
-      <div class="blurb">
+    <div id="youtube" class="grid-row js-section" data-text="youtube internship">
+      <div class="col one-of-2 blurb">
         <h1>At YouTube, I helped viewers find desired content faster.</h1>
-        <p>I spent my summer in California working on multiple projects to accelerate user journeys across various surfaces and entry points. I was responsible for collaborating with multiple stakeholders across Google & YouTube (including PM/UXR/Eng), creating prototypes for user testing in local and international markets, and presenting work to leadership.</p>
-        <p>Although I can’t speak to my work in detail, you can <a href="">read about my experience here.</a></p>
+        <p class="top-spacer">I spent my summer in California working on multiple projects to accelerate user journeys across various surfaces and entry points. I was responsible for collaborating with multiple stakeholders across Google & YouTube (including PM/UXR/Eng), creating prototypes for user testing in local and international markets, and presenting work to leadership.</p>
+        <p>Although I can’t speak to my work in detail, you can <a href="youtube.html">read about my experience here.</a></p>
       </div>
 
       <video class="mobile" src="img/yt-vid-temp.mp4" autoplay muted loop>
           Sorry, the browser you're using can't display the video. Try viewing in Chrome or Firefox!
       </video>
       </div>
+  </div>
+
+
+  <div class="grid-row youtube-trans">
+      <img src="img/yt-trans.png" width="63%">
+      <img src="img/yt-trans2.png" width="38%">
+  </div>
+
+  <!-- p2 content -->
+  <div class="content-container microsoft">
+    <div id="microsoft" class="grid-row js-section" data-text="microsoft internship">
+
+      <img src="img/msft-main.png">
+
+      <div class="col one-of-2 blurb">
+        <h1>At Microsoft, my team and I designed, developed, and shipped the Read My World app in just 16 weeks.</h1>
+        <p class="top-spacer">This was my first time being the sole designer on a product, which was equal parts daunting and exciting. Not only was I tasked with designing the mobile app’s overall creative vision—from branding, to interface, to interaction—but I also created weekly slide decks to present to leadership, conducted user research and testing, and even taught my first mini-class on design to my teammates. Not bad for <s>a day’s</s> 3 1⁄2 months of work!</p>
+        <p>I'm still in the process of writing up the case study—in the meantime, you can read <a href="https://techcrunch.com/2019/05/23/microsofts-new-language-learning-app-uses-your-phones-camera-and-computer-vision-to-teach-vocabulary/" target="_blank">this article TechCrunch wrote about it.</a></p>
+      </div>
+
     </div>
   </div>
 
-  <img src="img/msft-3mocks.png" class="interstitial">
+  <img src="img/msft-trans.png">
 
-  <!-- p2 content -->
+  <div class="content-container rc-trans js-section" data-text="academic project">
+    <img src="img/rc-trans.png">
+  </div>
+
+  <!-- p3 content -->
   <div class="content-container">
-    <div id="microsoft" class="grid-row">
+    <div id="rc" class="grid-row">
+      <div class="blurb">
+        <h1>While at university, I designed an experience for Royal Caribbean Intl.<sup>†</sup> to empower guests with travel anxiety.</h1>
 
-      <div class="col one-of-3 image">
+        <p class="footnote"><sup>†</sup>Hypothetical client</p>
+
+        <p class="top-spacer">For a senior UX design course my team and I tackled the challenge of designing a digital experience—from identifying a client to presenting the final project—in 4 weeks. We came up with At Port, an extension to Royal Caribbean Cruises’ existing mobile app.</p>
+
+        <p>For a detailed look at the project and the process throughout it, check out the <a href="at-port.html">case study here.</a></p>
       </div>
 
-      <div class="col two-of-3 blurb">
-        <h1>At Microsoft, my team and I designed, developed, and shipped the Read My World app in just 16 weeks.</h1>
-        <p>As the sole designer on the team, I designed the project’s overall creative vision, including its visual identity, wireframes, mocks, prototypes, interaction design, project pitches, and weekly slide decks.</p>
-        <p>TechCrunch <a href="">wrote an article about it</a>, and I’ve also written up a <a href="">walkthrough of the project here.</a></p>
+      <img class="mobile" src="img/rc-main.png">
       </div>
+  </div>
 
-    </div>
+  <div class="grid-row rc-trans">
+    <img src="img/rc-trans2.png">
+  </div>
+
+  <div class="content-container temp-end no-spacing js-section" data-text="hello@kitweir.com">
+    <h1>That's all for now— thanks for taking a look.</h1>
   </div>
 
   </main> <!-- end main page content -->
 
   <!-- footer -->
-  <footer class="fixed">
-    <p>hello@kitweir.com</p>
+  <footer class="fixed js-floating-text">
+    <!-- <p class="scrambleText">hello@kitweir.com</p> -->
+    <p class="change-text">hello@kitweir.com</p>
   </footer>
 
   <script src="js/menu.js"></script>
   <script src="js/blackoutText.js"></script>
+  <script src="js/noframework.waypoints.js"></script>
+  <script src="js/scrollTextTest.js"></script>
 </body>
 
 </html>
