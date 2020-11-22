@@ -512,8 +512,8 @@ video{
 
 p.corner-text{
   position:fixed;
-  bottom:1.8vw;
-  right:4.4vw;
+  bottom:1.45rem;
+  right:4rem;
   text-align: right;
 }
 
