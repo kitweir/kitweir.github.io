@@ -42,7 +42,7 @@ header .grid-row{
   align-items: flex-start;
 }
 
-.one-of-1, .one-of-2, .section-header, .section-content{
+.one-of-1, .one-of-2, .section-content{
   width:100%;
   margin:0;
 }
@@ -75,6 +75,13 @@ header .grid-row{
 .section-content{
   max-width:45rem;
 }
+
+
+.section-header{
+    width:13rem;
+    margin-right:5rem;
+    flex-shrink: 0;
+  }
 
 .grid-row.fin{
   width:100vw;
@@ -109,10 +116,5 @@ header .grid-row{
 
   .two-of-3{
     width:62%;
-  }
-
-  .section-header{
-    width:13rem;
-    margin-right:5rem;
   }
 }
