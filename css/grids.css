@@ -1,0 +1,120 @@
+html, body{
+  max-width:100%;
+  overflow-x: hidden;
+}
+
+.vertical{
+  flex-direction: column;
+}
+
+.grid-row{
+  display:flex;
+  margin:0;
+  width:100%;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.proj-page .grid-row{
+  align-items: flex-start;
+  margin-bottom: 4rem;
+}
+
+.grid-col{
+  display:flex;
+  margin:0;
+  width:100%;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.grid-col.mobile-desc{
+  align-items: flex-start;
+  max-width: 30rem;
+  align-self: center;
+}
+
+header .grid-row{
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.one-of-1, .one-of-2, .section-content{
+  width:100%;
+  margin:0;
+}
+
+.content-container{
+  min-height:100vh;
+  width:100vw;
+  padding: 6vw 5vw 6vw 9vw;
+  display:flex;
+  align-items: center;
+}
+
+.content-container.microsoft{
+  padding: 6vw 5vw 9vw 0vw;
+}
+
+.proj-page .content-container{
+  padding: 6vw 5vw 6vw 5vw;
+}
+
+.grid-row.rc-trans{
+  padding: 8vw 0vw 0vw 0vw;
+}
+
+#rc .blurb{
+  width: 54%;
+  margin:0;
+}
+
+.section-content{
+  max-width:45rem;
+}
+
+
+.section-header{
+    width:13rem;
+    margin-right:5rem;
+    flex-shrink: 0;
+  }
+
+.grid-row.fin{
+  width:100vw;
+  padding: 10vw 5vw 12vw 5vw;
+  display:flex;
+  align-items: flex-start;
+}
+
+.fin .previous, .fin .next{
+  max-width:42rem;
+}
+
+.fin .previous{
+  margin-right:6rem;
+}
+
+.fin .next{
+  margin-left:6rem;
+}
+
+
+@media(min-width:31em){ /* 499px */
+}
+
+@media(min-width:45.813em){ /* 733px — sidebar appears */
+}
+
+@media(min-width:55em){
+  .one-of-2{
+    width:48%;
+  }
+
+  .two-of-3{
+    width:62%;
+  }
+}
