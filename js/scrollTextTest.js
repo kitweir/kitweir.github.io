@@ -16,9 +16,9 @@ for (var i = 0; i < allWaypoints.length; i++) {
       var storedWord = scramble.textContent;
 
 
-      interval = setInterval(function() {
-        timer();
-      }, 170);
+      //interval = setInterval(function() {
+      //  timer();
+      //}, 170);
 
       function timer() {
         // scramble text based on the stored word
@@ -31,7 +31,7 @@ for (var i = 0; i < allWaypoints.length; i++) {
         el.innerHTML = text;
         storedWord = text;
 
-        setTimeout(oneSecondFunction, 1500);
+        //setTimeout(oneSecondFunction, 1500);
         function oneSecondFunction() {
           clearInterval(interval);
           scramble.textContent = text;
@@ -51,7 +51,7 @@ for (var i = 0; i < allWaypoints.length; i++) {
     handler: function(direction) {
 
       clearInterval(interval);
-      
+
       // store initial word in variable
       var storedWord = scramble.textContent;
 
@@ -62,7 +62,7 @@ for (var i = 0; i < allWaypoints.length; i++) {
         el.innerHTML = text;
         storedWord = text;
 
-        setTimeout(oneSecondFunction, 1500);
+        //setTimeout(oneSecondFunction, 1500);
         function oneSecondFunction() {
           clearInterval(interval);
           scramble.textContent = text;
